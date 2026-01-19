@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -432,7 +432,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-page-media-container">
           <p class="footer-media-text">Social media</p>
           <ul class="footer-media-list">
             <li class="footer-media-item">
@@ -465,7 +465,94 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="footer-media-text">Subscribe</p>
+          <form class="footer-form">
+            <label aria-label="footer user email">
+              <input
+                type="email"
+                name="footer-user-email"
+                class="footer-page-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-page-btn">
+              Subscribe
+              <svg class="footer-btn-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg class="modal-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-form-container">
+            <label class="modal-label">
+              <span class="form-label-text">Name</span>
+              <div class="modal-input-wrapper">
+                <input type="text" name="user-name" class="modal-input" />
+                <svg class="modal-input-svg" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <span class="form-label-text">Phone</span>
+              <div class="modal-input-wrapper">
+                <input type="tel" name="user-tel" class="modal-input" />
+                <svg class="modal-input-svg" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <span class="form-label-text">E-mail</span>
+              <div class="modal-input-wrapper">
+                <input type="email" name="user-email" class="modal-input" />
+                <svg class="modal-input-svg" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <span class="form-label-text">Comment</span>
+              <textarea
+                name="user-comment"
+                class="modal-text-area"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <div class="modal-form-policy-container">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-checkbox visually-hidden"
+              required
+              value="true"
+            />
+            <label for="policy" class="modal-form-checkbox-lebel">
+              <span class="modal-check">
+                <svg class="modal-form-checkbox-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg> </span
+              >I accept the terms and conditions of the&nbsp;
+              <a href="" class="modal-checkbox-text-dec">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
